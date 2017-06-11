@@ -1,3 +1,6 @@
+html {
+  width: 100%;
+}
 body {
   font-family: Helvetica;
   opacity: 0.9;
@@ -30,8 +33,8 @@ header {
 header nav {
   padding-top: 22px;
   padding-left: 1400px;
-  position: relative;
 }
+
 
 #Mission-Background {
 background-image: url("../mission-background.jpg");
@@ -39,8 +42,8 @@ background-repeat: no-repeat;
 height: 700px;
 padding-top: 70px;
 background-position: center;
-
 }
+
 .Our-Mission {
   background-color: black;
   width: 1200px;
@@ -48,32 +51,40 @@ background-position: center;
   margin: 210px auto -190px auto;
 }
 
-.Featured-Tea {
+
+#Tea-of-the-Month {
   width: 1000px;
-  margin: auto;
   text-align: center;
-}
-.items {
-  width: 900px;
   margin: auto;
-  flex-wrap: wrap;
-  display: flex;
 }
-.items img {
+.Featured-Tea {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
+  width: 1000px;
+}
+.Tea {
+  flex-direction: column;
+}
+.Featured-Tea h4{
+  text-align: center;
+  margin-top: 10px;
+}
+.Featured-Tea img {
   height: 200px;
   width: 300px;
+  margin: 0px 15px;
 }
-.items h4 {
-  padding: 10px;
-  display: block;
-}
+
 
 #Locations {
   background-image: url("../locations-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
+  width: 1155px;
+  margin: auto;
 }
 
 #Locations h2 {
@@ -83,20 +94,20 @@ background-position: center;
 
 .Locations {
   display: inline-block;
-  flex-direction: row;
   text-align: center;
   background-color: black;
   width: 300px;
   height: 250px;
   opacity: 1;
-  margin: auto 40px;
   padding-top: 15px;
+  margin: auto 40px;
   justify-content: center;
 
 }
 
 .Locations span {
   vertical-align: 25px;
+
 }
 
 .Contact {
